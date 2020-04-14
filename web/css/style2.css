@@ -1,0 +1,445 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body-wrap {
+    transition: padding-left .3s ease 0s;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 280px;
+    background-color: #303641;
+    position: fixed;
+    left: -280px;
+    transition: left 100ms linear;
+}
+
+.sidebar-active {
+    left: 0px;
+    overflow-y: auto;
+}
+
+.sidebarActiveView {
+    padding-left: 280px;
+}
+
+.body-main {
+    width: 100%;
+    background-color:#f3f8fb;
+}
+
+
+/* ======================== Styling Side Nav ========================== */
+
+.side-nav-head {
+    height: 75px;
+    border-bottom: 1px solid #343e50;
+}
+
+.side-nav-head h1 {
+    line-height: 73px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 32px;
+}
+
+.side-active-link {
+    color: #fff !important;
+}
+
+
+.side-nav-menu {
+    padding: 0px !important;
+    margin-top: 30px;
+}
+
+.side-main-nav li{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.side-main-nav li:hover {
+    background-color: #343942;
+}
+
+.side-main-nav li:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.side-main-nav li:hover .sub-drop-men a{
+    color: #8d97ad; 
+}
+
+.side-main-nav li a {
+    line-height: 48px;
+    color: #8d97ad;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    transition: color 200ms ease-in;
+}
+
+.side-main-nav li a span.arr {
+    float: right;
+    padding-right: 25px;
+}
+
+.li-drop-active a{
+    color: #fff !important;
+}
+
+.side-nav-active {
+    height: auto !important;
+}
+
+.self-dropdown-hidden {
+    display: none;
+}
+
+.self-dropdown-active {
+    display: block;
+}
+
+.sub-drop-men li a{
+    color: #8d97ad !important;
+}
+
+.sub-drop-men li:hover a {
+    color: #fff !important;
+}
+/* ============ Styling Top Nav =========== */
+
+.top-nav {
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid #d8e3e7;
+    padding: 15px 20px;
+}
+
+.nav-row {
+    height: 40px;
+}
+
+.nav-btn .mybtn {
+    width : 100%;
+    height: 40px;
+    box-shadow: 0px;
+    border: 0px;
+    background-color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    color: #8c8c8c;
+    cursor: pointer;
+}
+
+.nav-btn .mybtn:focus, .mybtn:active {
+    border: 0px;
+    outline: 0px;
+}
+
+.search-form input {
+    width: 100%;
+    height: 40px;
+    background-color: #f3eeff;
+    position: relative;
+    border: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-indent: 15px;
+    padding-left: 20px;
+}
+
+.search-form input:focus, .search-form input:active {
+    outline: 0px;
+    border: 0px;
+}
+
+.search-form button {
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    box-shadow: 0px;
+    border: 0px;
+    background-color: #f3eeff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #b1a7a7;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+.search-form button:focus, button:active {
+    border: 0px;
+    outline: 0px;
+}
+
+.myNavMenu4 li {
+    display: inline-block;
+    padding: 8px 8px;
+    margin: 0px 3px;
+}
+
+.myNavMenu4 li a {
+    color: #b1b1b1;
+    font-size: 26px;
+    line-height: 10px;
+}
+
+.myNavMenu4 li a:hover {
+    color: #4336FB;
+}
+
+.bell {
+    position: relative;
+}
+
+.bell span {
+    position: absolute;
+    font-size: 12px;
+    padding: 7px 5px;
+    border-radius: 100%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4336FB;
+    top: -3px;
+    left: 30px;
+}
+
+.envelope {
+    position: relative;
+}
+
+.envelope span {
+    position: absolute;
+    font-size: 12px;
+    padding: 7px 5px;
+    border-radius: 100%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4336FB;
+    top: -3px;
+    left: 30px;
+}
+
+/* =========== Designing Bottom Top Nav =================== */
+
+.bottom-top-nav {
+    height: 70px;
+    background-color: #fff;
+    padding: 15px 0px !important;
+    position: relative;
+}
+
+.bottom-top-nav-wrap {
+    height: 40px;
+    padding: 0px 0px 0px 15px;
+    width: 100%;
+}
+
+.bottom-top-nav h4 {
+    line-height: 40px;
+    border-left: 4px solid #4336FB;
+    padding-left: 41px;
+    color: #313b3d;
+    font-family: poppins,sans-serif;
+}
+
+.bottom-top-nav h4 .sub-men-head {
+    font-size: 15px;
+    margin-left: 30px;
+    color: #768387;
+    font-weight: 600;
+}
+
+.bottom-top-nav h4 .sub-men {
+    color: #4336FB;
+}
+
+.profile-top-bottom-nav {
+    height: 70px;
+    background: linear-gradient(to right,#8914fe 0%,#8063f5 100%);
+    position: absolute;
+    top: -55px;
+    text-align: center;
+}
+
+.profile-top-bottom-nav a {
+    color: #fff;
+    font-size: 22px;
+    line-height: 66px;
+    font-weight: bold;
+    display: block;
+}
+
+.profile-top-bottom-nav a i {
+    font-size: 28px;
+    line-height: 68px;
+}
+
+.profile-top-bottom-nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-profile .dropdown-item {
+    font-size: 14px;
+    color: #8a8a8a;
+    padding: 4px 10px !important;
+    line-height: 14px;
+}
+
+.menu-profile .dropdown-item:hover {
+    color: #4336FB;
+}
+
+.profile-top-bottom-nav .dropdown-menu {
+    position: absolute; 
+    transform: translate3d(44px, 45px, 0px); 
+    top: 0px; 
+    left: 0px; 
+    will-change: transform;
+}
+
+/* ============ Designing Welcome Wrap ================= */
+
+.wrap-welcome {
+    margin-top: 60px;
+}
+
+.wrap-welcome-item {
+    height: 280px;
+}
+
+.wrap1 {
+    background: linear-gradient(159deg, rgb(77, 77, 253) 0%, rgb(108, 143, 234) 100%);
+}
+
+.wrap2 {
+    background: linear-gradient(159deg, rgb(5, 176, 133) 0%, rgb(27, 212, 166) 59%);
+}
+
+.wrap3 {
+    background: linear-gradient(152deg, rgb(216, 88, 79) 0%, rgb(243, 140, 140) 100%);
+}
+
+.wrap1 h3 {
+    padding-top: 60px !important;
+}
+
+.wrap2 h3 {
+    padding-top: 60px !important;
+}
+
+.wrap3 h3 {
+    padding-top: 60px !important;
+}
+
+.wrap1 p.content-welcome, .wrap2 p.content-welcome, .wrap3 p.content-welcome {
+    font-size: 32px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.wrap-welcome-item h3.welcome-msg-head {
+    padding: 20px 0px 10px 0px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.wrap-welcome-item p.cont-logo {
+    color: #fff;
+    font-size: 28px;
+}
+
+
+/* =========== Footer Styling ============ */
+
+.footer {
+    background-color: #fff;
+    max-height: 80px;
+    margin-top: 60px;
+}
+
+.footer h2 {
+    line-height: 110px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #768387;
+}
+
+/* ============== Styling Table Of Candidate List =========== */
+
+.thead-violet {
+    background:  linear-gradient(to right,#8914fe 0%,#8063f5 100%);
+    color: #fff;
+}
+
+.adm-candidate-content td button.btn.btn-danger {
+    background-color: #ff3500 !important;
+}
+
+.my-modal .modal-dialog {
+    overflow-y: initial !important;
+}
+.my-modal .modal-body{
+    height: 450px;
+    overflow-y: auto;
+}
+.wrap-welcome .btn-primary {
+    background: linear-gradient(159deg, rgb(5, 176, 133) 0%, rgb(27, 212, 166) 59%);
+    outline: 0px;
+    border: 0px;
+}
+
+/* ============= Styling Add Question ================ */
+
+.add-ques-form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 50px !important;
+}
+
+.add-ques-head {
+    background: #fff;
+    padding: 30px !important;
+    margin-bottom: 20px;
+}
+
+.add-ques-form .btn-success {
+    margin-top: 15px;
+}
+
+.add-ques-form textarea {
+    resize: none;
+}
+
+
+/* =================== Styling Subject page ================= */
+
+.subject-main {
+    background: #fff;
+    padding-bottom: 20px;
+    min-height: 400px;
+}
+
+.subject-main h4 {
+    padding: 20px 0px;
+}
+
+.sub-table {
+    min-height: 350px;
+    max-height: 450px;
+    overflow-y: auto;
+}

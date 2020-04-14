@@ -1,0 +1,490 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 13, 2019, 2:10:04 PM
+    Author     : Vineet Tiwari
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* =============================== Home Page Login And Admin Login ========================= */
+
+.home-wrap {
+    height: 100vh;
+    background-image: url("../image/background/2.jpg");
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-size: cover;
+    position: relative;
+    float: left;
+}
+
+.login-form-wrap {
+    background-color: #fff;
+    padding: 30px 0px 40px 0px;
+    margin-top: 130px;
+    border-radius: 10px;
+}
+
+.myform {
+    margin-top: 30px;
+}
+
+/* ============================== Registration Page ============================= */
+
+.reg-wrap {
+    min-height: 100vh;
+    background-image: url("../image/background/2.jpg");
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-size: cover;
+    position: relative;
+    float: left;
+    padding-bottom: 70px;
+}
+
+.reg-form-wrap {
+    background: #fff;
+    padding: 30px 20px;
+    margin-top: 70px;
+    float: left;
+    border-radius: 10px;
+}
+
+.reg-form-wrap header h1 {
+    font-family: Forte;
+}
+
+.form-group span {
+    display: inline;
+}
+
+.reg-gender {
+    padding: 0px;
+    padding-top: 6px;
+}
+
+.reg-gender .mar-left {
+    margin-left: 10px;
+}
+
+.reg-gender label {
+    cursor: pointer;
+}
+
+.form-group textarea {
+    height: 130px;
+    resize: none;
+}
+
+.toast-body.err-toast-my {
+    padding: 1.5rem !important;
+    background-color: #fff;
+}
+
+/* =================== dashboard common css ============================ */
+
+
+.mynav {
+    background-color: #ff3500;
+}
+
+.mynav .navbar-brand {
+    font-family: Forte;
+    color: #fff;
+    font-size: 24px;
+}
+
+.mynav .active a{
+    color: #111;
+}
+
+.mynav li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.mynav li a:hover {
+    color: #111;
+}
+
+.mynav button {
+    border-color: #fff !important;
+    padding: 0px;
+    padding-top: 5px;
+}
+
+.mynav button .navbar-toggler-icon {
+    color: #fff !important;
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+.mydrop {
+    background-color: #ff3500 !important;    
+    border: 0px !important;
+    box-shadow: none !important;
+    float: left;
+    min-width: 12.5rem;
+    /*left: -83%;*/
+}
+
+.mynav .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -81% !important;
+    min-width: 12.5rem !important;
+}
+
+.navbar a.dropdown-item.active, a.dropdown-item:active {
+    background-color: #383838 !important;
+}
+
+
+.let .navbar-nav .dropdown-menu {
+    position: absolute !important;
+    left: -81% !important;
+    min-width: 12.5rem !important;
+}
+
+.dash-cont-home {
+    height: 90.5vh;
+    background-image: url("../image/background/1.jpg");
+    background-size: cover;
+    float: left;
+}
+
+.welcome-message {
+    height: 400px;
+    background-color: #fff;
+    margin-top: 100px;
+    float: left;
+    border-radius: 8px;
+}
+
+.welcome-message h1 {
+    font-size: 70px;
+    color: #ff3500;
+    margin-top: 20px;
+}
+
+.welcome-message p.welcome-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #acacac;
+}
+
+.welcome-message p.welcome-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: #474545;
+    line-height: 8px;
+    position: relative;
+}
+
+.welcome-message p.welcome-head::before {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #ff3500;
+    position: absolute;
+    top: 30px;
+    display: inline-block;
+    margin: 0px auto;
+}
+
+.welcome-content-text {
+    padding: 30px 20px 0px 20px;
+    color: #585151;
+}
+
+/* ==================== Admin Candidate List Page =========================== */
+.adm-candidate-list .adm-candidate-content {
+    padding-top: 40px;
+}
+
+.adm-candidate-list .adm-candidate-content h2 {
+    font-weight: bold;
+    color: #3d3d3d;
+    position: relative;
+}
+
+.adm-candidate-list .adm-candidate-content h2::before {
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: #ff3500;
+    top: 45px;
+}
+
+.adm-candidate-content .table {
+    margin-top: 60px;
+    border-radius: 5px;
+}
+
+.adm-candidate-content td button.btn.btn-danger {
+    background-color: #ff3500 !important;
+}
+
+.my-modal .modal-dialog {
+    overflow-y: initial !important;
+}
+.my-modal .modal-body{
+    height: 450px;
+    overflow-y: auto;
+}
+
+.my-modal .btn.btn-danger {
+    background-color: #ff3500 !important;
+}
+
+/* ================= User Profile =======================  */
+
+.user-profile-main {
+    
+}
+
+.user-profile-main-wrap {
+    border: 1px solid #d7d0d0;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.user-profile-main-wrap .user-logo {
+    height: 105px;
+    border: 1px solid #d7d0d0;
+    border-radius: 100%;
+    position: absolute;
+    left: 46%;
+    top: -52.5px;
+    z-index: 200;
+    background-color: #fff;
+}
+
+.user-profile-main-wrap .profile-logo {
+    font-size: 66px;
+    color: #383838;
+    transition: color 200ms ease-in;
+}
+
+.user-profile-main:hover .profile-logo {
+    color: #ff3500;
+}
+
+.user-profile-name-head {
+    margin-top: 70px;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    font-weight: bold;
+    color: #383838;
+    margin-bottom: 30px;
+}
+
+.user-profile-main .row .col-md-4{
+    margin-top: 20px;
+}
+
+.user-prof-cont-main {
+    background-color: #ffede9;
+    padding: 0px 0px 0px 0px !important;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.user-prof-cont-main .user-prof-cont-head {
+    height: 50px;
+    background-color: #fff;
+    line-height: 45px;
+    border: 1px solid #ffede9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 0px 20px;
+    font-variant: small-caps;
+    color: #3d3d3d;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.user-prof-cont-content {
+    padding: 20px 30px 28px 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.prof-cont-caps {
+    text-transform: capitalize;
+}
+
+/* ============================== Edit Candidate Profile ==================== */
+
+.user-edit-profile-main {
+    min-height: 90.5vh;
+    background-image: url('../image/background/1.jpg');
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+}
+
+.user-edit-profile-wrap {
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 0px !important;
+}
+
+.user-edit-profile-wrap .edit-profile-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Forte;
+    font-size: 28px;
+    color: #ff3500;
+    border: 1px solid #ffd8ce;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.edit-form {
+    padding-bottom: 20px;
+}
+
+/* ================== Change Password User Side ======================= */
+
+.user-password-change {
+    min-height: 90.5vh;
+    background-image: url('../image/background/1.jpg');
+    background-size: cover;
+    padding-top: 110px;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+}
+
+.user-change-password-wrap {
+    padding-bottom: 0px !important;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0px !important;;
+}
+
+.user-change-password-wrap h3 {
+    text-align: center;
+    font-family: Forte;
+    color: #ff3500;
+    padding: 10px 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #f8d7da;
+}
+ 
+/* ====================  ====================== */
+
+.my-exam-mark {
+    background-color: #fff;
+    padding: 30px 30px 30px 40px !important;
+    margin-top: 200px;
+}
+
+.my-exam-mark-2 {
+    background-color: #fff;
+    padding: 30px 30px 30px 40px !important;
+    margin-top: 100px;
+}
+
+.my-exam-mark-3 {
+    background-color: #fff;
+    padding: 50px 30px 50px 40px !important;
+    margin-top: 150px;
+    border-radius: 8px;
+}
+
+.my-exam-mark-2 ol  {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    margin-left: 30px;
+}
+
+.my-exam-mark-2 ol li {
+    margin: 8px 0px;
+}
+
+.my-exam-mark-2 ol li span {
+    font-weight: normal;
+    color: #111;
+}
+
+.exam-area-back {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 100px;
+    min-height: 300px;
+    padding: 0px 30px 30px 40px !important;
+}
+
+.exam-area-back h4 {
+    padding: 20px 20px 20px 0px;
+}
+
+.exam-area-back .ques-head {
+    padding: 5px 0px 10px 0px !important;
+}
+
+.exam-area-back label.myAns {
+    cursor: pointer;
+}
+
+/* ======================== Result Page Designing ======================== */
+
+.result-main-detail p {
+    border-bottom: 1px solid #111;
+}
+
+
+
+
+
+
+
+
+
+/* ================= Responsive Handling =======================  */
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media screen and (max-width: 992px) {
+
+.mynav .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: 0% !important;
+    min-width: 100% !important;
+}
+
+
+.let .navbar-nav .dropdown-menu {
+    position: absolute !important;
+    left: 0% !important;
+    min-width: 100% !important;
+}
+
+  
+}
+
+@media screen and (max-width: 1224px) {
+.user-profile-main-wrap .user-logo {
+    display: none;
+}
+}
+
+
+@media (min-width: 1200px) {}
